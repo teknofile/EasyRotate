@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 {if ROTATE_BOOTSTRAP == 1}
   <li class="nav-item">
-      <a href="javascript:void(0)" onclick="onEasyRotateClicked(90)" title="{'Rotate counterclockwise'|translate}" class="pwg-state-default pwg-button nav-link" rel="nofollow">
+      <a href="javascript:void(0)" onclick="onEasyRotateClicked(90)" title="{'Rotate counterclockwise'|translate}" class="pwg-state-default pwg-button nav-link" rel="nofollow">foo
         <i class="fas fa-undo fa-fw" aria-hidden="true"></i>
         <span class="pwg-button-text">{'EasyRotate'|translate}</span>
       </a>
@@ -25,11 +25,11 @@ $(document).ready(function() {
       </a>
   </li>
 {elseif ROTATE_BOOTSTRAP == 0}
-  <a href="javascript:void(0)" onclick="onEasyRotateClicked(90)" title="{'Rotate counterclockwise'|translate}" class="pwg-state-default pwg-button" rel="nofollow">
+  <a href="javascript:void(0)" onclick="onEasyRotateClicked(90)" title="{'Rotate counterclockwise'|translate}" class="pwg-state-default pwg-button" rel="nofollow"><img src="{$EASYROTATE_PATH}template/rotate_ccw.png" style="background-color:black;" />
     <span class="pwg-icon easyrotate-ccw-button"> </span>
     <span class="pwg-button-text">{'EasyRotate'|translate}</span>
   </a>
-  <a href="javascript:void(0)" onclick="onEasyRotateClicked(270)" title="{'Rotate clockwise'|translate}" class="pwg-state-default pwg-button" rel="nofollow">
+  <a href="javascript:void(0)" onclick="onEasyRotateClicked(270)" title="{'Rotate clockwise'|translate}" class="pwg-state-default pwg-button" rel="nofollow"><img src="{$EASYROTATE_PATH}template/rotate_cw.png" style="background-color:black;" />
     <span class="pwg-icon easyrotate-cw-button"> </span>
     <span class="pwg-button-text">{'EasyRotate'|translate}</span>
   </a>
